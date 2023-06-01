@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  gap: 5px;
+}
+
+input {
+  /* disablings */
+  outline: none;
+  /* outside */
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  /* inside input style */
+  background: transparent;
+  color: white;
+  font-weight: 900;
+}
+
+button {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
+  width: 150px;
+  height: 40px;
+}
+
+button:hover {
+  background: orangered;
+  color: white;
+}

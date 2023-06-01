@@ -1,0 +1,22 @@
+.contactList {
+  padding: 10px;
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  gap: 20px;
+  padding: 10px;
+}
+
+.remove {
+  width: 30px;
+}

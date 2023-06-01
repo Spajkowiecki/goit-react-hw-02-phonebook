@@ -1,0 +1,15 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.filter span {
+  margin-bottom: 10px;
+  text-decoration: underline 2px goldenrod;
+}

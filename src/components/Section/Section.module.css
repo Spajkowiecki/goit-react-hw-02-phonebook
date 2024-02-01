@@ -1,0 +1,13 @@
+.section {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.section h2 {
+  text-align: center;
+  padding: 10px;
+  background: rgb(209, 209, 209);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: 1px solid black;
+}

@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import style from './ContactList.module.css';
 import Contact from '../Contact/Contact';
 
 class ContactList extends Component {
@@ -10,7 +11,7 @@ class ContactList extends Component {
   render() {
     const { contacts } = this.props;
     return (
-      <ul>
+      <ul className={style}>
         {contacts.length === 0 ? (
           <p>You don't have contacts</p>
         ) : (

@@ -23,19 +23,16 @@ class App extends Component {
   addToContacts = data => {
     const { contacts } = this.state;
 
-    if (
-      contacts.filter(element =>
-        element.name.toLowerCase().includes(data.name.toLowerCase())
-      )
-    ) {
-      return alert('Contact already exist!');
-    }
+    const contactExist = contacts.filter(element =>
+      element.name.toLowerCase().includes(data.name.toLowerCase())
+    );
+
+    console.log('ContactExists!: ', contactExist);
 
     data = {
       id: 'id-' + (contacts.length + 1),
       ...data,
     };
-    console.log('Contact: ', data);
     this.setState(prevState => {
       return { contacts: [...prevState.contacts, data] };
     });
@@ -79,8 +76,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
-  filter: PropTypes.string.isRequired,
+  contacts: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default App;

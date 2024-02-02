@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import Contact from '../Contact/Contact';
-import style from './ContactList.module.css';
 
 class ContactList extends Component {
   handleRemove = contact => {

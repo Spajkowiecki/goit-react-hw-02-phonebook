@@ -27,6 +27,10 @@ class App extends Component {
       element.name.toLowerCase().includes(data.name.toLowerCase())
     );
 
+    if (contactExist.length > 0) {
+      return alert('Contact already exist!');
+    }
+
     console.log('ContactExists!: ', contactExist);
 
     data = {
